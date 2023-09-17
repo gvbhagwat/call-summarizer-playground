@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "call-summarizer-playground"
+version = "0.1.0"
+description = "summarizing calls using chatgpt and other services"
+authors = ["Gaurav Bhagwat <bhagwat.gv@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.103.1"
+uvicorn = "^0.23.2"
+asyncpg = "^0.28.0"
+databases = "^0.8.0"
+pydantic = "^2.3.0"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pyjwt = "^2.8.0"
+loguru = "^0.7.2"
+slowapi = "^0.1.8"
+jaeger-client = "^4.8.0"
+opentracing = "^2.4.0"
+python-dotenv = "^1.0.0"
+httpx = "^0.25.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+pytest-asyncio = "^0.21.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
